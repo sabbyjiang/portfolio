@@ -1,0 +1,195 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 70pt;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+.full {
+    height: 100vh;
+    width: 100vw;
+}
+
+.full:nth-child(even) {
+    background-color: lightslategrey;
+}
+
+.landing {
+    display: flex;
+}
+
+.landing-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome {
+    align-content: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 50%;
+    width: 60%;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    /*This is not a typo! Maintains a ratio*/
+    width: 60vh; 
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.honeycomb {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.hexagon {
+    background-color: gainsboro;
+    /*Top/bottom margin approx 28% of .hexagon height + spacing*/
+    margin: 3vh .2vh;
+    position: relative;
+    top: 1vh;
+}
+
+.hexagon, .hexagon::before, .hexagon::after {
+    height: 10vh;
+    /* Width is calculated from height (width = height * 1.732)*/
+    width: 17.32vh;
+}
+
+.hexagon::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(-60deg);
+}
+
+.hexagon::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(60deg);
+}
+
+.hexagon:nth-child(even) {
+    /*Calculated as 50% of width + spacing*/
+    left: 8.7vh;
+    top: 1vh;
+}
+
+.hexacontent {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 100%;
+    z-index: 100;
+}
+
+.hexanav {
+    color: inherit;
+    text-decoration: none;
+}
+
+.about-me, .projects, .contact {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    height: 70%;
+    justify-content: space-around;
+    line-height: 1.2;
+    width: 50%;
+}
+
+.project-container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
+.project-gon {
+    background-color: gainsboro;
+    margin: -10.1vh 25.65vh;
+    position: relative;
+}
+
+.project-gon, .project-gon::after, .project-gon::before {
+    /*border-top: 1px solid black;
+    border-bottom: 1px solid black;*/
+    height: 42vh;
+    /* Width is calculated from height (width = height / 1.732)*/
+    width: 24.2vh;
+}
+
+.project-gon::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(-60deg);
+}
+
+.project-gon::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(60deg);
+}
+
+.solo {
+    left: 37.8vh;
+}
+
+.form-filler {
+    background-color: linen;
+    height: 30vh;
+    width: 100%;
+}
+
+.social {
+    align-self: flex-end;
+    background-color: linen;
+    height: 5vh;
+    margin: 2vh 0;
+    width: 100%;
+}
