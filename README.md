@@ -15,5 +15,3 @@
 ## Contact
 
 ![Contact](http://i.imgur.com/tynn2Uf.png)
-
-sorry... the screen grabs are too big so they don't render in markdown
