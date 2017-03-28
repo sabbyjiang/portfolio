@@ -1,3 +1,6 @@
+/*http://imakewebthings.com/waypoints/ FOR SCROLLING*/
+.call-to-action {background-color: rgb(255, 77, 77)}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -20,13 +23,23 @@ p {
     font-weight: 300;
 }
 
+::selection{
+    background: rgb(255, 77, 77);
+    color: #FEF6E4;
+}
+
+.emph {
+    display: inline-block;
+    border-bottom: 1px solid rgb(255, 77, 77);
+}
+
 .full {
     height: 100vh;
     width: 100vw;
 }
 
 .full:nth-child(even) {
-    background-color: lightslategrey;
+    background-color: gainsboro;
 }
 
 .landing {
@@ -45,7 +58,7 @@ p {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    height: 50%;
+    height: 40%;
     width: 60%;
 }
 
@@ -54,7 +67,7 @@ nav {
     display: flex;
     height: 100%;
     justify-content: center;
-    margin: 0 8vw;
+    margin: 0 3vw;
     /*This is not a typo! Maintains a ratio*/
     width: 60vh; 
 }
@@ -100,6 +113,11 @@ nav {
     transform: rotate(60deg);
 }
 
+.nav-link:hover {
+    color: white;
+    background-color: rgb(255, 77, 77);
+}
+
 .hexagon:nth-child(even) {
     /*Calculated as 50% of width + spacing*/
     left: 8.7vh;
@@ -113,12 +131,25 @@ nav {
     transform: translate(-50%, -50%);
     top: 50%;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
+}
+
+.project-gon h2 + p {
+    top: 60%
+}
+
+.project-gon h2 {
+    top: 40%
+}
+
+.hexahover a {
+    z-index: 2;
 }
 
 .hexanav {
     color: inherit;
     text-decoration: none;
+    padding-bottom: 2px;
 }
 
 .about-me, .projects, .contact {
@@ -156,8 +187,6 @@ nav {
 }
 
 .project-gon, .project-gon::after, .project-gon::before {
-    /*border-top: 1px solid black;
-    border-bottom: 1px solid black;*/
     height: 42vh;
     /* Width is calculated from height (width = height / 1.732)*/
     width: 24.2vh;
@@ -179,6 +208,41 @@ nav {
     transform: rotate(60deg);
 }
 
+.project-gon img {
+    z-index: 1;
+    position: absolute;
+    top: 12%;
+    left: -14.5%;
+}
+
+.project-gon .hexacontent {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+}
+
+.project-gon .hexacontent, .project-gon .hexacontent::before, .project-gon .hexacontent::after {
+    height: 100%;
+    width: 100%;
+}
+
+.project-gon .hexacontent::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(60deg);
+}
+
+.project-gon .hexacontent::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(-60deg);
+}
+
 .solo {
     left: 37.8vh;
 }
@@ -195,4 +259,21 @@ nav {
     height: 5vh;
     margin: 2vh 0;
     width: 100%;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.hexahover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.profile {
+    background: gainsboro center/cover url("../images/Profile.jpg");
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    /*border: 3px dashed gainsboro;*/
 }

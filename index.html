@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,800" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/script.js"></script>
     <title>Sabrina Jiang</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
         <div class="landing-content">
             <div class="welcome">
                 <h1>Sabrina Jiang</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique iure pariatur odio sunt quo ea amet quis deserunt inventore quas tempore totam ad expedita, est dignissimos, fugit possimus libero quasi?</p>
+                <p><span class="emph">Developer</span>, <span class="emph">nutritionist</span>, and <span class="emph">adventure-seeker</span>.</p>
             </div>
         </div>
         <nav>
@@ -23,14 +25,14 @@
                 <div class="hexagon">
                     <p class="hexacontent"></p>
                 </div>
-                <div class="hexagon">
-                    <p class="hexacontent"><a href="#about-me" class="hexanav">About Me</a></p>
+                <div class="hexagon nav-link">
+                    <p class="hexacontent"><a href="#about-me" class="hexanav emph">About Me</a></p>
                 </div>
-                <div class="hexagon">
-                    <p class="hexacontent"><a href="#projects" class="hexanav">Projects</a></p>
+                <div class="hexagon nav-link">
+                    <p class="hexacontent"><a href="#projects" class="hexanav emph">Projects</a></p>
                 </div>
-                <div class="hexagon">
-                    <p class="hexacontent"><a href="#contact" class="hexanav">Contact Me</a></p>
+                <div class="hexagon nav-link">
+                    <p class="hexacontent"><a href="#contact" class="hexanav emph">Contact Me</a></p>
                 </div>
                 <div class="hexagon">
                     <p class="hexacontent"></p>
@@ -42,25 +44,35 @@
     <div class="about-me full" id="about-me">
         <div class="about content">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eligendi neque officia, veniam inventore eaque accusantium ratione saepe mollitia repellat reprehenderit expedita autem vel distinctio aperiam animi, hic aliquid optio.</p>
+            <div class="profile"></div>
+            <p>I found my passion balancing creativity and organization through web development. I believe in pushing outside my comfort zone constantly, which is why I am always trying new things. In my free time, I like to bake (eat) desserts, do yoga, and read books.</p>
         </div>
     </div>
 
     <div class="projects full" id="projects">
         <div class="project-container">
-            <div class="project-gon solo">
-                <p class="hexacontent">Project 1</p>
+            <div class="project-gon solo" id="project1">
+                <img class="hexaimage" src="images/Red-King.png" />
+                <div class="hexacontent hidden hexahover">
+                    <a class="emph hexanav" href="https://git.generalassemb.ly/pages/sabrina-jiang/Project-1-Checkers-Sabrina-Jiang/">Let's Play Checkers</a>
+                </div>
             </div>
             <div class="row">
-                <div class="project-gon">
-                    <p class="hexacontent">Project 2</p>
+                <div class="project-gon" id="project2">
+                    <img class="hexaimage" src="images/hamburger.png" />
+                    <div class="hexacontent hidden hexahover">
+                        <a class="emph hexanav" href="https://meal-planner-and-recipe.herokuapp.com/">Recipe Organize</a>
+                    </div>
                 </div>
-                <div class="project-gon">
-                    <p class="hexacontent">Project 3</p>
+                <div class="project-gon" id="project3">
+                    <div class="hexacontent hidden">
+                        <div class="hexacontent hidden hexahover">
+                            <a class="emph hexanav" href="#">Holder Link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="project-gon description solo">
-                <p class="hexacontent">Description</p>
             </div>
         </div>
     </div>
