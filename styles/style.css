@@ -18,6 +18,14 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-size: 28pt;
+}
+
+h4 {
+    font-size: 18pt;
+}
+
 p {
     font-size: 14pt;
     font-weight: 300;
@@ -30,7 +38,7 @@ p {
 
 .emph {
     display: inline-block;
-    border-bottom: 1px solid rgb(255, 77, 77);
+    border-bottom: 1px solid HSL(0, 100%, 80%)
 }
 
 .full {
@@ -39,7 +47,7 @@ p {
 }
 
 .full:nth-child(even) {
-    background-color: gainsboro;
+    background-color: hsla(300, 5%, 90%, 1);
 }
 
 .landing {
@@ -84,7 +92,7 @@ nav {
 }
 
 .hexagon {
-    background-color: gainsboro;
+    background-color: hsla(300, 5%, 90%, 1);
     /*Top/bottom margin approx 28% of .hexagon height + spacing*/
     margin: 3vh .2vh;
     position: relative;
@@ -114,6 +122,7 @@ nav {
 }
 
 .nav-link:hover {
+    transition: 500ms ease;
     color: white;
     background-color: rgb(255, 77, 77);
 }
@@ -152,10 +161,14 @@ nav {
     padding-bottom: 2px;
 }
 
-.about-me, .projects, .contact {
+.about-me, .projects, .cv {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.projects, .cv {
+    flex-wrap: wrap;
 }
 
 .content {
@@ -181,7 +194,7 @@ nav {
 }
 
 .project-gon {
-    background-color: gainsboro;
+    background-color: hsla(300, 5%, 90%, 1);
     margin: -10.1vh 25.65vh;
     position: relative;
 }
@@ -253,15 +266,6 @@ nav {
     width: 100%;
 }
 
-.social {
-    align-self: flex-end;
-    background-color: linen;
-    height: 5vh;
-    margin: 2vh 0;
-    width: 100%;
-}
-
-
 .hidden {
     visibility: hidden;
 }
@@ -276,4 +280,94 @@ nav {
     width: 25vh;
     border-radius: 50%;
     /*border: 3px dashed gainsboro;*/
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 36pt;
+    color: white;
+}
+
+.cs-resume {
+    width: 80%;
+    background-color: white;
+}
+
+.cv-section {
+    background-color: white;
+}
+
+.cv-resume {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 80vh;
+}
+
+.cv-section ul {
+    margin-left: 5px;
+    /*list-style-type: disc;*/
+}
+
+.cv-section ul li:before {
+    content: "-";
+    margin-right: 2px;
+}
+
+.cv-section-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.education ul, .skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.education, .skills {
+    margin: 10px;
+}
+
+.social {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+.social h3 {
+    width: 100%;
+}
+
+.social ul {
+    margin-left: 0;
+}
+
+.social ul li {
+    width: 30px;
+    display: inline-block;
+}
+
+.social ul li::before {
+    content: none; 
+}
+
+.social ul li a {
+    height: 30px;
+    margin-top: 10px;
+}
+
+#linkedin {
+    background: center/100% url('../images/linkedin.png') no-repeat;
+}
+
+#github {
+    background: center/100% url('../images/GitHub-Mark-120px-plus.png') no-repeat;
 }

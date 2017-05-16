@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,800" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/hexagons.css">
     <script src="scripts/jquery.js"></script>
     <script src="scripts/script.js"></script>
     <title>Sabrina Jiang</title>
 </head>
 <body>
+    <!--<div class="description hidden"> 
+    </div>-->
     <div class="landing full">
         <div class="landing-content">
             <div class="welcome">
@@ -26,13 +29,13 @@
                     <p class="hexacontent"></p>
                 </div>
                 <div class="hexagon nav-link">
-                    <p class="hexacontent"><a href="#about-me" class="hexanav emph">About Me</a></p>
-                </div>
-                <div class="hexagon nav-link">
                     <p class="hexacontent"><a href="#projects" class="hexanav emph">Projects</a></p>
                 </div>
                 <div class="hexagon nav-link">
-                    <p class="hexacontent"><a href="#contact" class="hexanav emph">Contact Me</a></p>
+                    <p class="hexacontent"><a href="#about-me" class="hexanav emph">About Me</a></p>
+                </div>
+                <div class="hexagon nav-link">
+                    <p class="hexacontent"><a href="#CV" class="hexanav emph">CV</a></p>
                 </div>
                 <div class="hexagon">
                     <p class="hexacontent"></p>
@@ -41,16 +44,56 @@
         </nav>
     </div>
 
-    <div class="about-me full" id="about-me">
-        <div class="about content">
-            <h2>About Me</h2>
-            <div class="profile"></div>
-            <p>I found my passion balancing creativity and organization through web development. I believe in pushing outside my comfort zone constantly, which is why I am always trying new things. In my free time, I like to bake (eat) desserts, do yoga, and read books.</p>
-        </div>
-    </div>
-
     <div class="projects full" id="projects">
-        <div class="project-container">
+        <h2 class="title"> Projects </h2>
+        <ul id="hexGrid">
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="https://git.generalassemb.ly/pages/sabrina-jiang/Project-1-Checkers-Sabrina-Jiang">
+                    <img src="images/Red-King.png" alt="checkers-logo" />
+                    <h1>Checkers</h1>
+                    <p>Two-Player Online Checkers Game</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="https://meal-planner-and-recipe.herokuapp.com/">
+                    <img src="images/hamburger.png" alt="recipes-logo" />
+                    <h1>Recipes Organizer</h1>
+                    <p>Search and Sort Your Recipes</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="https://meal-planner-and-recipe.herokuapp.com/">
+                    <img src="images/APartMENT.png" alt="appartement-logo" />
+                    <h1>APartMENT</h1>
+                    <p>Design your furniture around a central art piece</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="https://reddit-emotions.herokuapp.com/">
+                    <img src="images/reddit-emotions.png" alt="reddit-emotions-logo" />
+                    <h1>Emotions for Reddit</h1>
+                    <p>Get emotional analysis for Reddit's subreddits</p>
+                    </a>
+                </div>
+            </li>
+            <li class="hex">
+                <div class="hexIn">
+                    <a class="hexLink" href="">
+                    <img src="images/more.png" alt="more-logo" />
+                    <h1>More Projects</h1>
+                    <p>... coming soon</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <!--<div class="project-container">
             <div class="project-gon solo" id="project1">
                 <img class="hexaimage" src="images/Red-King.png" />
                 <div class="hexacontent hidden hexahover">
@@ -74,18 +117,87 @@
             </div>
             <div class="project-gon description solo">
             </div>
+        </div>-->
+    </div>
+
+    <div class="about-me full" id="about-me">
+        <div class="about content">
+            <h2>About Me</h2>
+            <div class="profile"></div>
+            <p>I found my passion balancing creativity and organization through web development. I believe in pushing outside my comfort zone constantly, which is why I am always trying new things. In my free time, I like to bake (eat) desserts, do yoga, and read books.</p>
         </div>
     </div>
 
-    <div class="contact full" id="contact">
-        <div class="contact content">
-            <h2>Get In Touch</h2>
-            <div class="form-filler">
-                form form form form
+    <div class="cv full" id="CV">
+        <h2 class="title">CV</h2>
+        <div class="cv-resume">
+            <!--<div class="experiences cv-section">
+                <h3>Experiences</h3>
+                <div class="exp-container">
+                    <div class="ind-exp">
+                        <h4>General Assembly</h4>
+                        <ul>
+                            <li>Designed and created responsive websites</li>
+                            <li>Created fullstack applications using both Ruby on Rails and Node.js as backend</li>
+                            <li>Worked with multiple APIs, deploying through heroku, and tracking changes through git </li>
+                        </ul>
+                    </div>
+                    <div class="ind-exp">
+                        <h4>Mount Sinai St Luke's Weight Loss Programme - Research Assistant</h4>
+                        <ul>
+                            <li>Designed and conducted an experiment ont he correlation between the magnitude of of sympathetic arousal to food-related imagery and obesity through BMI</li>
+                            <li>Analysed and presented data on psychological correlates to weight loss, weight gain, and weight loss-maintenace through Excel</li>
+                            <li>Tuaght and discussed current scientific literature on weight loss with weight loss programme participants</li>
+                        </ul>
+                    </div>
+                    <div class="ind-exp">
+                        <h4>Anatomy Fashion Show - Production and Design Coordinator</h4>
+                        <ul>
+                            <li>Coordinated set up for the first annaul Anatomy Fashion Show, a charity event that raised over $20,000 for Children’s Miracle Network</li>
+                            <li>Organised the display of silent auction items, which contributed the majroity of the money raised</li>
+                            <li>Designed and distributed flyers for publicity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+            <div class="cv-section-container">
+                <div class="education cv-section">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>General Assembly - Web Development Immersive</li>
+                        <li>Columbia University - M.S. Human Nutrition with Honors</li>
+                        <li>MITx - Quantitative Biologyy</li>
+                        <li>UCLA - B.S. Psychobiology</li>
+                    </ul>
+                </div>
+                <div class="skills cv-section">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                            <ul>
+                                <li>jQuery</li>
+                                <li>Node.js</li>
+                                <li>D3</li>
+                                <li>React</li>
+                            </ul>
+                        <li>Ruby on Rails</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>Chinese</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="social">
-                social links here
+            <div class="social cv-section">
+                <h3>Where Else to Find Me</h3>
+                <ul>
+                    <li><a class="social" id="linkedin" href="https://www.linkedin.com/in/sabrina-jiang">
+                        <!--<img src="images/linkedin.png" alt="linkedin-logo" >-->
+                    </a></li>
+                    <li><a class="social" id="github" href="https://github.com/sabbyjiang/">
+                        <!--<img src="images/GitHub-Mark-120px-plus.png" alt="github-logo" >-->
+                    </a></li>
+                </ul>
             </div>
         </div>
     </div>
