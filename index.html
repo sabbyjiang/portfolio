@@ -14,8 +14,6 @@
     <title>Sabrina Jiang</title>
 </head>
 <body>
-    <!--<div class="description hidden"> 
-    </div>-->
     <div class="landing full">
         <div class="landing-content">
             <div class="welcome">
@@ -44,12 +42,19 @@
         </nav>
     </div>
 
+    
     <div class="projects full" id="projects">
+        <div class="modal hidden">
+            <div class="close" id="close-modal">
+                <p><a href=""><span class="emph">X</span></a></p>
+            </div>
+            <div class="description"></div>
+        </div>
         <h2 class="title"> Projects </h2>
         <ul id="hexGrid">
             <li class="hex">
                 <div class="hexIn">
-                    <a class="hexLink" href="https://git.generalassemb.ly/pages/sabrina-jiang/Project-1-Checkers-Sabrina-Jiang">
+                    <a id="checkers" class="hexLink" href="https://git.generalassemb.ly/pages/sabrina-jiang/Project-1-Checkers-Sabrina-Jiang">
                     <img src="images/Red-King.png" alt="checkers-logo" />
                     <h1>Checkers</h1>
                     <p>Two-Player Online Checkers Game</p>
@@ -58,7 +63,7 @@
             </li>
             <li class="hex">
                 <div class="hexIn">
-                    <a class="hexLink" href="https://meal-planner-and-recipe.herokuapp.com/">
+                    <a id="recipes" class="hexLink" href="https://meal-planner-and-recipe.herokuapp.com/">
                     <img src="images/hamburger.png" alt="recipes-logo" />
                     <h1>Recipes Organizer</h1>
                     <p>Search and Sort Your Recipes</p>
@@ -67,7 +72,7 @@
             </li>
             <li class="hex">
                 <div class="hexIn">
-                    <a class="hexLink" href="https://meal-planner-and-recipe.herokuapp.com/">
+                    <a id="apartment" class="hexLink" href="https://appartement.herokuapp.com">
                     <img src="images/APartMENT.png" alt="appartement-logo" />
                     <h1>APartMENT</h1>
                     <p>Design your furniture around a central art piece</p>
@@ -76,7 +81,7 @@
             </li>
             <li class="hex">
                 <div class="hexIn">
-                    <a class="hexLink" href="https://reddit-emotions.herokuapp.com/">
+                    <a id="reddit" class="hexLink" href="https://reddit-emotions.herokuapp.com/">
                     <img src="images/reddit-emotions.png" alt="reddit-emotions-logo" />
                     <h1>Emotions for Reddit</h1>
                     <p>Get emotional analysis for Reddit's subreddits</p>
@@ -85,7 +90,7 @@
             </li>
             <li class="hex">
                 <div class="hexIn">
-                    <a class="hexLink" href="">
+                    <a class="hexLink" href="#projects" id="empty">
                     <img src="images/more.png" alt="more-logo" />
                     <h1>More Projects</h1>
                     <p>... coming soon</p>

@@ -266,10 +266,6 @@ nav {
     width: 100%;
 }
 
-.hidden {
-    visibility: hidden;
-}
-
 .hexahover {
     background-color: rgba(255, 255, 255, 0.4);
 }
@@ -370,4 +366,67 @@ nav {
 
 #github {
     background: center/100% url('../images/GitHub-Mark-120px-plus.png') no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+.close {
+    text-align: right;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    transition: all 500ms ease;
+}
+
+.close p {
+    font-size: 30px;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.blur {
+    /*-webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);*/
+    /*position: relative;*/
+    z-index: -10;
+}
+
+.project-title {
+    font-size: 40pt;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.project-image {
+    width: 50vw;
+}
+
+.modal {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    transition: all 500s ease;
+    filter: blur(0px);
+    overflow: scroll;
+}
+
+.description {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.project-description {
+    width: 50vw;
 }
